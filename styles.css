@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(35, 35, 35));
+    min-height: 100vh;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav img {
+    width: 200px;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin-left: 40px;
+    /* Espaçamento entre os itens do menu */
+}
+
+nav li h3,
+h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+}
+
+.Itens {
+    position: absolute;
+    box-shadow: 0 0 2px rgb(255, 255, 255);
+    display: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+.Itens h5 {
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    cursor: pointer;
+    border-top: 1px solid rgb(35, 35, 35);
+}
+
+.Itens h5:first-child {
+    border-top: none;
+}
+
+.dropdown:hover .Itens {
+    display: block;
+}
+
+.search {
+    margin-left: auto;
+    display: flex;
+}
+
+.search input[type="text"] {
+    padding: 5px;
+    border: solid 1px white;
+    border-radius: 5.5px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    width: 200px;
+}
+
+.profile1 {
+    filter: invert(1);
+    width: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.profile2 {
+    filter: invert(1);
+    width: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.Filmes {
+    background-color: transparent;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    scrollbar-width: none;
+    cursor: pointer;
+    display: block;
+}
+
+.Filmes::-webkit-scrollbar {
+    /* Esconde a barra de rolagem no Chrome, Safari e Edge -> pedi ajuda do chat gpt*/
+    display: none;
+}
+
+.Filmes img {
+    padding: 10px;
+    width: 350px;
+}
+
+.Séries {
+    background-color: transparent;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    scrollbar-width: none;
+    align-items: flex-end;
+    cursor: pointer;
+    display: block  ;
+}
+
+.Séries::-webkit-scrollbar {
+    /* Esconde a barra de rolagem no Chrome, Safari e Edge -> pedi ajuda do chat gpt*/
+    display: none;
+}
+
+.Séries img {
+    padding: 10px;
+    width: 350px;
+}
+
+.imagemcentro{
+
+    display: block;
+    justify-content:right;
+    text-align: right;
+    align-items:end;
+    margin-right: 30px;
+    margin-top: -400px;
+    
+}
+
+.sinopse{
+    margin-top: 200px;
+}
